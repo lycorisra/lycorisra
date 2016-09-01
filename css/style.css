@@ -31,7 +31,7 @@ a, button.submit {
   transition: all .1s ease-in; }
 
 a:hover, a:active {
-  color: #444; }
+  color: #F16565; }
 
 a:focus {
   outline: auto; }
@@ -143,15 +143,13 @@ a:focus {
   .post .post-title {
     margin: 0;
     color: #555;
-    text-align: left;
-    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
+    text-align: left; }
     .post .post-title a {
       color: #555; }
   .post .post-meta {
     padding: 0;
     margin: 15px 0 0;
     color: #6E7173;
-    float: left;
     display: inline;
     text-indent: .15em; }
     .post .post-meta:before {
@@ -170,7 +168,6 @@ a:focus {
     padding: 0;
     margin: 15px 0 0;
     color: #6E7173;
-    float: right;
     display: inline;
     text-indent: .15em; }
     .post .ds-thread-count:before {
@@ -183,7 +180,6 @@ a:focus {
     padding: 0;
     margin: 15px 0 0;
     color: #6E7173;
-    float: right;
     display: inline;
     text-indent: .15em; }
     .post .disqus-comment-count:before {
@@ -362,7 +358,6 @@ blockquote, .stressed {
 blockquote:before, .stressed-quote:before {
   content: "\201C";
   display: block;
-  font-family: times;
   font-style: normal;
   font-size: 48px;
   color: #444;
@@ -628,7 +623,7 @@ div {
 /* syntax highlight*/
 figure.highlight,
 .codeblock {
-  background: #f7f8f8;
+  background: rgba(247, 248, 248, 0.2);
   margin: 10px 0;
   line-height: 1.2em;
   color: #333;
@@ -647,7 +642,8 @@ figure.highlight,
   .codeblock .code,
   .codeblock .tag {
     background-color: inherit;
-    font: 400 14px / 1.62 'PT Sans', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     border: none;
     padding: 0;
     margin: 0;
@@ -695,7 +691,6 @@ figure.highlight,
 
 .gist .line,
 .gist .line-number {
-  font-family: Menlo;
   font-size: 1em;
   margin: 0 0 5px 0; }
 
@@ -1142,8 +1137,7 @@ figure.highlight,
     line-height: 25px;
     font-size: 15px;
     color: #555;
-    border-bottom: none;
-    float: left; }
+    border-bottom: none; }
     .post-nav a.pre {
       float: left; }
       .post-nav a.pre:before {
@@ -1303,3 +1297,91 @@ em.search-keyword {
   font-weight: bold;
   font-style: normal;
   color: #01579f; }
+
+body {
+  background-image: url(../images/bg_garden2.jpg);
+  background-position: top right;
+  background-repeat: no-repeat; }
+
+.extra1 {
+  background-image: url(../images/platform.png);
+  position: fixed;
+  top: 270px;
+  right: 85px;
+  width: 85px;
+  height: 184px;
+  margin: -85px; }
+
+.extra2 {
+  background-image: url(../images/edge_bottom_black.gif);
+  background-repeat: repeat-x;
+  position: fixed;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  height: 20px;
+  margin-left: -100%; }
+
+.extra3 {
+  background-image: url(../images/edge_top_black.gif);
+  background-repeat: repeat-x;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 20px;
+  margin-left: -100%; }
+
+.extra4 {
+  background-image: url(../images/edge_left_black.gif);
+  background-repeat: repeat-y;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 100%;
+  margin: 0; }
+
+.extra5 {
+  background-image: url(../images/edge_right_black.gif);
+  background-repeat: repeat-y;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  margin: 0; }
+
+#sidebar {
+  border-left: 1px solid #716F6F; }
+
+#sidebar .widget .widget-title {
+  border-bottom: 1px solid #716F6F; }
+
+#sidebar .category-list-item a, #sidebar .widget-title i.fa, #sidebar a {
+  color: #fff; }
+
+#sidebar a:hover {
+  color: red; }
+
+i.fa {
+  color: #FF7043 !important;
+  /* color: #F18D00 !important; */ }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #cccccc;
+  -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: gray;
+  -webkit-border-radius: 6px; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: #CCCCCC;
+  -webkit-border-radius: 6px; }
